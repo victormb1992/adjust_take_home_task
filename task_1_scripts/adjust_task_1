@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# define the index of the array
+i="0"
+
+# loop to calculate the values of the array
+while [ $i -lt 10 ]
+do
+
+ # generate random value between 1 and 10
+ value="$((($RANDOM % 10) + 1))"
+
+ # check if the value already exists in the array
+ if [[ ! " ${array[@]} " =~ " ${value} " ]]
+ then
+
+  # add the value to the array only if it had not been already added
+  array[i]=$value
+  # increase the index only when a new value is added
+  ((i=i+1))
+
+ fi
+
+done
+
+# print the array
+echo "${array[*]}"
