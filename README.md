@@ -1,6 +1,4 @@
-# adjust_take_home_task
-
-“Network Monitoring Engineer” Take Home Task
+# “Network Monitoring Engineer” Take Home Task
 
 Task 1
 
